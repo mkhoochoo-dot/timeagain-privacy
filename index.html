@@ -1,0 +1,333 @@
+<title>TimeAgain 개인정보처리방침</title>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #17130d;
+    --ink-soft: #5c5348;
+    --ink-faint: #8a7f70;
+    --paper: #fbf8f4;
+    --card: #ffffff;
+    --rule: #e8e0d5;
+    --accent: #9e5a00;
+    --accent-soft: #fff3e2;
+    --stop: #8c3b2e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2ede6;
+      --ink-soft: #b6ab9c;
+      --ink-faint: #8a8074;
+      --paper: #14110d;
+      --card: #1d1913;
+      --rule: #322b22;
+      --accent: #ffa94d;
+      --accent-soft: #2a1e0e;
+      --stop: #e08a7a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #f2ede6; --ink-soft: #b6ab9c; --ink-faint: #8a8074;
+    --paper: #14110d; --card: #1d1913; --rule: #322b22;
+    --accent: #ffa94d; --accent-soft: #2a1e0e; --stop: #e08a7a;
+  }
+  :root[data-theme="light"] {
+    --ink: #17130d; --ink-soft: #5c5348; --ink-faint: #8a7f70;
+    --paper: #fbf8f4; --card: #ffffff; --rule: #e8e0d5;
+    --accent: #9e5a00; --accent-soft: #fff3e2; --stop: #8c3b2e;
+  }
+
+  body {
+    margin: 0;
+    padding: 0 20px 96px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+      "Pretendard", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .wrap { max-width: 42rem; margin: 0 auto; }
+
+  header { padding: 64px 0 32px; border-bottom: 1px solid var(--rule); }
+
+  .mark {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 14px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+  }
+  .mark svg { display: block; }
+
+  h1 {
+    margin: 20px 0 12px;
+    font-size: clamp(30px, 6vw, 42px);
+    line-height: 1.25;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+  }
+
+  .lede { margin: 0; color: var(--ink-soft); font-size: 19px; }
+
+  .meta {
+    margin-top: 24px; font-size: 14px; color: var(--ink-faint);
+    display: flex; flex-wrap: wrap; gap: 6px 20px;
+  }
+
+  h2 {
+    margin: 56px 0 16px;
+    font-size: 22px; letter-spacing: -.01em;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  h2 .num {
+    font-size: 13px; font-weight: 700; color: var(--accent);
+    font-variant-numeric: tabular-nums; flex: none;
+  }
+
+  h3 { margin: 32px 0 8px; font-size: 17px; }
+
+  p { margin: 0 0 16px; }
+
+  ul { margin: 0 0 16px; padding-left: 1.15em; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--ink-faint); }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px;
+  }
+
+  .headline {
+    margin: 36px 0;
+    padding: 26px 28px;
+    background: var(--accent-soft);
+    border-radius: 14px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  .headline span { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 4px 24px;
+    margin: 20px 0;
+  }
+
+  .scroller { overflow-x: auto; margin: 20px 0; }
+  table {
+    border-collapse: collapse; width: 100%; min-width: 30rem;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left; padding: 12px 14px;
+    border-bottom: 1px solid var(--rule); vertical-align: top;
+  }
+  th { font-size: 13px; color: var(--ink-faint); font-weight: 600; white-space: nowrap; }
+  td code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 13px; color: var(--ink-soft);
+  }
+
+  .yes, .no { font-weight: 600; white-space: nowrap; }
+  .yes { color: var(--accent); }
+  .no { color: var(--stop); }
+
+  .note {
+    font-size: 15px; color: var(--ink-soft);
+    border-left: 3px solid var(--rule); padding-left: 16px; margin: 20px 0;
+  }
+
+  footer {
+    margin-top: 72px; padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px; color: var(--ink-faint);
+  }
+  footer p { margin-bottom: 8px; }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M75.42,52.13 A21.5,21.5 0 1 1 55.87,32.58"
+            fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="69.21" cy="38.79" r="6" fill="currentColor"/>
+    </svg>
+    TimeAgain
+  </div>
+  <h1>개인정보처리방침</h1>
+  <p class="lede">TimeAgain은 사용 기록을 수집하지 않습니다. 기록은 기기 안에만 있습니다.</p>
+  <div class="meta">
+    <span>시행일 2026년 7월 31일</span>
+    <span>개발자 ecofamia</span>
+    <span>앱 ID <code>com.ecofamia.timeagain</code></span>
+  </div>
+</header>
+
+<div class="headline">
+  TimeAgain에는 <span>인터넷 권한이 없습니다.</span><br>
+  기록이 기기를 떠날 방법이 기술적으로 존재하지 않습니다.
+</div>
+
+<p>
+  이 문장은 약속이 아니라 확인 가능한 사실입니다. 안드로이드에서 앱이 무엇이든 외부로
+  보내려면 <code>android.permission.INTERNET</code> 권한이 반드시 필요하고, 이 권한은
+  앱 정보 화면과 스토어에 그대로 공개됩니다. TimeAgain에는 그 권한이 없습니다.
+</p>
+
+<h2><span class="num">01</span> 수집하는 개인정보</h2>
+
+<p><strong>없습니다.</strong> TimeAgain은 어떤 개인정보도 수집하거나 외부로 전송하지 않습니다.</p>
+
+<p>
+  이름, 이메일, 전화번호, 기기 식별자, 위치를 요구하지 않습니다. 회원가입이 없고
+  계정도 없습니다.
+</p>
+
+<h2><span class="num">02</span> 기기 안에서만 다루는 정보</h2>
+
+<p>
+  앱이 동작하려면 아래 정보를 읽어야 합니다. 모두 <strong>기기 저장소 안에서만</strong>
+  처리되며 외부로 나가지 않습니다.
+</p>
+
+<div class="card">
+  <ul>
+    <li>사용자가 직접 고른 앱의 <strong>실행·종료 시각과 사용 시간</strong></li>
+    <li>멈춤 화면에서 고른 <strong>선택과 입력한 사용 목적</strong></li>
+    <li>사용자가 정한 <strong>목표 시간과 앱별 설정</strong></li>
+  </ul>
+</div>
+
+<p>
+  이 기록은 기기 내부 저장 공간의 데이터베이스에 저장됩니다. 다른 앱은 접근할 수 없고,
+  앱을 삭제하면 함께 사라집니다. 설정 화면의 <strong>데이터 삭제</strong>로 언제든 전부
+  지울 수 있습니다.
+</p>
+
+<h2><span class="num">03</span> 보지 않는 것</h2>
+
+<div class="scroller">
+  <table>
+    <thead>
+      <tr><th>항목</th><th>여부</th><th>설명</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>화면 내용</td><td class="no">보지 않음</td><td>접근성 서비스를 사용하지 않습니다</td></tr>
+      <tr><td>메시지·대화 내용</td><td class="no">보지 않음</td><td>알림 읽기 권한이 없습니다</td></tr>
+      <tr><td>키 입력</td><td class="no">보지 않음</td><td>입력을 가로채지 않습니다</td></tr>
+      <tr><td>웹 검색·방문 기록</td><td class="no">보지 않음</td><td>브라우저에 접근하지 않습니다</td></tr>
+      <tr><td>연락처·통화·문자</td><td class="no">보지 않음</td><td>해당 권한이 없습니다</td></tr>
+      <tr><td>위치</td><td class="no">보지 않음</td><td>위치 권한이 없습니다</td></tr>
+      <tr><td>사진·파일</td><td class="no">보지 않음</td><td>저장소 접근 권한이 없습니다</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2><span class="num">04</span> 광고와 분석 도구</h2>
+
+<p>
+  TimeAgain에는 <strong>광고가 없습니다.</strong> 광고 SDK, 외부 분석 SDK, 크래시
+  수집 도구를 사용하지 않습니다.
+</p>
+
+<p class="note">
+  주의를 덜 빼앗으려고 만든 앱이 주의를 팔면 앞뒤가 맞지 않습니다. 그래서 광고를
+  넣지 않고 구독으로 운영합니다.
+</p>
+
+<h2><span class="num">05</span> 사용하는 권한과 이유</h2>
+
+<div class="scroller">
+  <table>
+    <thead>
+      <tr><th>권한</th><th>쓰는 이유</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>PACKAGE_USAGE_STATS</code><br>사용 정보 접근</td>
+        <td>어떤 앱을 언제 얼마나 쓰는지 알아야 멈춤 화면을 띄우고 기록을 남길 수 있습니다</td>
+      </tr>
+      <tr>
+        <td><code>SYSTEM_ALERT_WINDOW</code><br>다른 앱 위에 표시</td>
+        <td>멈춤 화면을 앱 위에 띄웁니다</td>
+      </tr>
+      <tr>
+        <td><code>FOREGROUND_SERVICE</code><br>포그라운드 서비스</td>
+        <td>앱을 열 때를 놓치지 않고 감지합니다</td>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code><br>알림</td>
+        <td>작동 중임을 알리는 알림과 리포트 알림을 보냅니다</td>
+      </tr>
+      <tr>
+        <td><code>ACCESS_NOTIFICATION_POLICY</code><br>방해 금지 접근</td>
+        <td>폰 내려놓기를 쓸 때만 방해 금지를 켜고 끝나면 되돌립니다</td>
+      </tr>
+      <tr>
+        <td><code>RECEIVE_BOOT_COMPLETED</code><br>부팅 완료 수신</td>
+        <td>기기를 다시 켜도 감시가 이어집니다</td>
+      </tr>
+      <tr>
+        <td><code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code></td>
+        <td>안드로이드 표준 라이브러리가 포함하는 권한입니다. 네트워크 연결 여부를 읽을 수는 있지만, 인터넷 권한이 없어 아무것도 보낼 수 없습니다</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2><span class="num">06</span> 결제 정보</h2>
+
+<p>
+  구독 결제는 <strong>구글 플레이</strong>가 처리합니다. TimeAgain은 카드 번호를 비롯한
+  어떤 결제 정보도 보거나 저장하지 않습니다. 결제와 환불은
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">구글의 개인정보처리방침</a>을
+  따릅니다.
+</p>
+
+<h2><span class="num">07</span> 만 14세 미만 아동</h2>
+
+<p>
+  TimeAgain은 아동을 대상으로 하지 않으며, 아동을 포함한 누구의 개인정보도 수집하지
+  않습니다.
+</p>
+
+<h2><span class="num">08</span> 이용자의 권리</h2>
+
+<p>
+  수집하는 개인정보가 없으므로 열람·정정·삭제를 요청할 대상이 없습니다. 기기 안의
+  기록은 사용자가 직접 관리합니다.
+</p>
+
+<ul>
+  <li>설정 &gt; <strong>데이터 삭제</strong> — 모든 기록을 지웁니다</li>
+  <li>앱 삭제 — 기록이 기기에서 함께 사라집니다</li>
+  <li>안드로이드 설정에서 권한을 언제든 끌 수 있습니다</li>
+</ul>
+
+<h2><span class="num">09</span> 방침 변경</h2>
+
+<p>
+  이 방침이 바뀌면 이 페이지에서 시행일과 함께 알립니다. 수집하는 정보가 생기는 변경은
+  앱 안에서도 따로 알린 뒤에 적용합니다.
+</p>
+
+<h2><span class="num">10</span> 문의</h2>
+
+<p>
+  개인정보 처리에 대한 문의는 <a href="mailto:m.k.hoochoo@gmail.com">m.k.hoochoo@gmail.com</a>
+  으로 보내 주세요.
+</p>
+
+<footer>
+  <p>TimeAgain · ecofamia</p>
+  <p>시행일 2026년 7월 31일</p>
+</footer>
+
+</div>
