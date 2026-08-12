@@ -164,21 +164,22 @@
   <h1>개인정보처리방침</h1>
   <p class="lede">TimeAgain은 사용 기록을 수집하지 않습니다. 기록은 기기 안에만 있습니다.</p>
   <div class="meta">
-    <span>시행일 2026년 7월 31일</span>
+    <span>시행일 2026년 8월 12일</span>
     <span>개발자 ecofamia</span>
     <span>앱 ID <code>com.ecofamia.timeagain</code></span>
   </div>
 </header>
 
 <div class="headline">
-  TimeAgain에는 <span>인터넷 권한이 없습니다.</span><br>
-  기록이 기기를 떠날 방법이 기술적으로 존재하지 않습니다.
+  TimeAgain에는 <span>서버가 없습니다.</span><br>
+  사용 기록을 보낼 곳 자체가 존재하지 않습니다.
 </div>
 
 <p>
-  이 문장은 약속이 아니라 확인 가능한 사실입니다. 안드로이드에서 앱이 무엇이든 외부로
-  보내려면 <code>android.permission.INTERNET</code> 권한이 반드시 필요하고, 이 권한은
-  앱 정보 화면과 스토어에 그대로 공개됩니다. TimeAgain에는 그 권한이 없습니다.
+  인터넷 연결은 한 가지 일에만 쓰입니다 — <strong>구글 플레이 결제 처리</strong>입니다.
+  <code>android.permission.INTERNET</code> 권한은 구글의 결제 라이브러리(Google Play
+  Billing)가 요구하여 포함되어 있고, 구독 확인과 결제 외의 통신은 없습니다.
+  광고 SDK도, 분석 SDK도, 기록을 받을 서버도 없습니다 — 사용 기록은 기기 안에만 있습니다.
 </p>
 
 <h2><span class="num">01</span> 수집하는 개인정보</h2>
@@ -275,8 +276,12 @@
         <td>기기를 다시 켜도 감시가 이어집니다</td>
       </tr>
       <tr>
+        <td><code>INTERNET</code>, <code>BILLING</code><br>인터넷 · 구글 플레이 결제</td>
+        <td>구글의 결제 라이브러리가 요구하는 권한입니다. 구독 확인과 결제 처리에만 쓰이며, 사용 기록은 전송되지 않습니다</td>
+      </tr>
+      <tr>
         <td><code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code></td>
-        <td>안드로이드 표준 라이브러리가 포함하는 권한입니다. 네트워크 연결 여부를 읽을 수는 있지만, 인터넷 권한이 없어 아무것도 보낼 수 없습니다</td>
+        <td>결제 라이브러리와 안드로이드 표준 라이브러리가 포함하는 권한입니다. 네트워크 연결 여부 확인과 처리 중 대기에 쓰입니다</td>
       </tr>
     </tbody>
   </table>
@@ -327,7 +332,7 @@
 
 <footer>
   <p>TimeAgain · ecofamia</p>
-  <p>시행일 2026년 7월 31일</p>
+  <p>시행일 2026년 8월 12일</p>
 </footer>
 
 </div>
